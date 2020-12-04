@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Bees.SharedData.Interfaces
+namespace BeesData.SharedData.Interfaces
 {
     public interface IValidatable
     {

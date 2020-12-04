@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 
-namespace Bees.SharedData.Enums
+namespace BeesData.SharedData.Enums
 {
     public enum eHiveType
     {
