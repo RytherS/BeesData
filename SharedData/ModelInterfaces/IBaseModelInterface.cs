@@ -5,9 +5,8 @@ using System.Text;
 
 namespace BeesData.SharedData.ModelInterfaces
 {
-    public interface IBaseModel<TModelInterface> : IValidatable
+    public interface IBaseModelInterface<TModelInderface> : IValidatable
     {
-        void CopyFrom(TModelInterface other);
-        bool HasChanged();
+        void CopyFrom(TModelInderface other);
     }
 }

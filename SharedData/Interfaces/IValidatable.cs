@@ -6,6 +6,6 @@ namespace BeesData.SharedData.Interfaces
 {
     public interface IValidatable
     {
-        bool Validate();
+        bool IsValid();
     }
 }

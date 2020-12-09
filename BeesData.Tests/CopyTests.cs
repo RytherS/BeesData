@@ -7,14 +7,14 @@ using System;
 
 namespace BeesData.Tests
 {
-    public class Tests
+    public class CopyTests
     {
         [SetUp]
         public void Setup()
         {
         }
 
-        private bool CopiedCorrectly<TModelInterface>(IBaseModel<TModelInterface> A, IBaseModel<TModelInterface> B)
+        private static bool CopiedCorrectly<TModelInterface>(TModelInterface A, TModelInterface B)
         {
             var props = typeof(TModelInterface).GetProperties();
             foreach (var prop in props)

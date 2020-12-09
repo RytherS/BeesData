@@ -6,9 +6,18 @@ namespace BeesData.ClientData.Models
 {
     public class Hive : BaseModel<IHive>, IHive
     {
-        public eHiveType HiveType { get; set; } = eHiveType.Warre;
+        private string _hiveType = "Langstroth";
+        public eHiveType HiveType
+        {
+            get
+            {
+                return (eHiveType)Enum.Parse(typeof(eHiveType), _hiveType);
+            }
 
-        public override bool Validate()
+            set => _hiveType = Enum.GetName(typeof(eHiveType), value);
+        }
+
+        public override bool IsValid()
         {
             return true;
         }

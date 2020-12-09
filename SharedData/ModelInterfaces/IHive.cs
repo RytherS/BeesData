@@ -6,7 +6,7 @@ using System.Text;
 
 namespace BeesData.SharedData.ModelInterfaces
 {
-    public interface IHive : IBaseModel<IHive>
+    public interface IHive : IBaseModelInterface<IHive>
     {
         eHiveType HiveType { get; set; }
     }
